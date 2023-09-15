@@ -1,0 +1,143 @@
+.btn-primary {
+    background: #02386e;
+}
+
+.btn-circle {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+  
+.btn-gradient-blue {
+    background: linear-gradient(to right,#02386e, #007bff);
+    color: #fff;
+    width: 200px;
+}
+ 
+.btn-gradient-blue:hover {
+    background: #007bff;
+}
+
+div.bg-grey{
+    width: 300px;
+}
+
+.bg-orange {
+    background-color: #fc9b33;
+}
+
+.bg-orange-light {
+    background-color: #ffb65e;
+}
+
+.btn-orange {
+    border-radius: 50px;
+    background-color: white;
+    color: #fc9b33;
+    width: 200px;
+}
+
+.btn-orange:hover {
+    background-color: #fc9b33;
+    color: white;
+}
+
+.btn-orange:focus {
+    border-radius: 50px;
+    background-color: white;
+    color: #fc9b33;
+}
+
+.text-orange {
+    color: #f97613;
+}
+
+.custom-text {
+    font-size: 28px;
+}
+
+.submenu-item {
+    color: white;
+}
+
+.submenu-item:hover {
+    background-color: transparent;
+}
+
+.form-control::placeholder {
+    font-size: 14px;
+    color: #b4b4b4;
+}
+
+@media (max-width: 576px) {
+    .custom-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .btn-orange {
+        width: 170px;
+    }
+}
+
+@media (min-width: 1900px) {
+    .btn-orange {
+        width: 260px;
+        height: 50px;
+    }
+
+    .smartphone_logo {
+        width: 260px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .btn-orange {
+        width: 320px;
+        height: 60px;
+    }
+
+    .smartphone_logo {
+        width: 320px;
+    }
+}
+
+@media (min-height: 890px) {
+    .height-default {
+      height: 100vh;
+    }
+}
+
+.bg-img1 {
+    background-image: url("assets/femme01.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fc9b33;
+}
+
+.home_watch {
+    background-image: url("assets/droite.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.right-side {
+    padding-top: 200px; 
+    right: 0;
+}
+
+.right-side-simple{
+    color: grey;
+    font-weight: lighter;
+}
+
+.right-side-bold{
+    color: grey;
+    font-weight: bold;
+}
+
+.partner .phone-brand {
+     margin-right: 120px;
+}

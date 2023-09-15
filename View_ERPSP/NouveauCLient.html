@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouveau client</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="vh-100">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Sidebar -->
+                <div id="sidebar" class="height-default col-md-3 col-lg-2 d-md-block bg-orange-light sidebar" style=" position: relative;">
+                    <div class="text-center">
+                        <img src="assets/smartphone.png" class="img-fluid mt-5" alt="">
+                    </div>
+    
+                    <div class="d-flex flex-column align-items-center mt-5">
+                        <button type="button" class="btn btn-orange my-4">Facturation</button>
+                        <button type="button" class="btn btn-orange my-4">Stock</button>
+                        <div class="dropdown mt-3">
+                            <button type="button" class="btn btn-orange dropdown-toggle my-4" data-bs-toggle="dropdown">Clients</button>
+                            <ul class="dropdown-menu bg-transparent border-0">
+                                <li>
+                                    <a class="dropdown-item submenu-item" href="ListesClients.html">Liste des clients</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item submenu-item" href="NouveauCLient.html">Nouveau client</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <button type="button" class="btn text-orange bottom-0 mb-4" style="position: absolute;">Fermer Session</button>
+                </div>
+
+                <!-- Main Content -->
+                <main class="height-default col-md-9 ms-sm-auto bg-img1 col-lg-10 px-md-4" style=" position: relative;">
+                    <div class="d-flex lead mt-5 justify-content-between">
+                        <p class="lead text-light custom-text ms-5">
+                            <img src="assets/icon-parametre.png" class="img-fluid align-top" alt="">
+                            <span>Joelle</span>
+                        </p>
+                        <p class="lead text-light custom-text me-5 text-end">lundi, 17 juillet <br> 15:13</p>
+                    </div>  
+                    
+                    <p class="text-light ms-5 bottom-0 mb-4" style="position: absolute;">Siège Orange Ankorondrano</p>
+
+                    <div class="col-lg-4 mx-auto">
+                        <form class="shadow p-5 mb-5 rounded-5 bg-light">
+                            <h2 class="mb-4">Nouveau client</h2>
+                            <div class="form-group mb-2">
+                                <label for="firstname" class="text-secondary">Nom*</label>
+                                <input type="text" class="form-control" id="firstname" placeholder="Ex: Razakamandimby">
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="lastname" class="text-secondary">Prénom*</label>
+                                <input type="text" class="form-control" id="lastname" placeholder="Ex: Joelle">
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="email" class="text-secondary">Mail*</label>
+                                <input type="email" class="form-control" id="email" placeholder="Ex: joelle.razakamandimby@gmail.com">
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="phone" class="text-secondary">Téléphone</label>
+                                <input type="text" class="form-control" id="phone" placeholder="Ex: 032 07 100 64">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-secondary">Mot de passe*</label>
+                                <input type="password" class="form-control" id="password" placeholder="Mot de passe">
+                            </div> 
+                            <div class="form-group mb-2">
+                                <label for="entreprise" class="text-secondary">Entreprise*</label>
+                                <input type="text" class="form-control" id="entreprise" placeholder="Ex: Orange">
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="location" class="text-secondary">Lieu</label>
+                                <input type="text" class="form-control" id="location" placeholder="Ex: Siège Ankorondrano">
+                            </div>        
+                
+                            <div class="text-center mt-3">
+                                <button type="submit" class="btn-gradient-blue p-2 border-0">Ajouter</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>

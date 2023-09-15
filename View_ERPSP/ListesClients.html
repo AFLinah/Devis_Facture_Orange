@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des clients</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="vh-100">
+        <div class="container-fluid h-100">
+            <div class="row">
+                <!-- Sidebar -->
+                <div id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-orange-light sidebar vh-100">
+                    <div class="text-center">
+                        <img src="assets/smartphone.png" class="img-fluid mt-5" alt="">
+                    </div>
+
+                    <div class="d-flex flex-column align-items-center mt-5">
+                        <button type="button" class="btn btn-orange my-4">Facturation</button>
+                        <button type="button" class="btn btn-orange my-4">Stock</button>
+                        <div class="dropdown mt-3">
+                            <button type="button" class="btn btn-orange dropdown-toggle my-4" data-bs-toggle="dropdown">Clients</button>
+                            <ul class="dropdown-menu bg-transparent border-0">
+                                <li>
+                                    <a class="dropdown-item submenu-item" href="ListesClients.html">Liste des clients</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item submenu-item" href="NouveauCLient.html">Nouveau client</a></li>
+                            </ul>
+                        </div>
+                    </div>  
+                    
+                    <button type="button" class="btn text-orange bottom-0 mb-5" style="position: absolute;">Fermer Session</button>
+                </div>
+            
+                <!-- Main Content -->
+                <main class="col-md-9 ms-sm-auto bg-img1 col-lg-10 px-md-4 vh-100" style="position: relative;">
+                    <div class="d-flex lead mt-5 justify-content-between">
+                        <p class="lead text-light custom-text ms-5">
+                            <img src="assets/icon-parametre.png" class="img-fluid align-top" alt="">
+                            <span>Joelle</span>
+                        </p><br>
+                        <p class="lead text-light custom-text me-5 text-end">lundi, 17 juillet <br> 15:13</p>
+                    </div>
+                    <p class="lead ms-5 text-light">
+                        <span class="fw-bold">Liste des Clients</span>
+                        (27)
+                    </p>
+
+                    <div class="table-responsive bg-light rounded-4 mx-5 pt-5 shadow-lg" style="height: 62vh; position: relative;">
+
+                        <div class="row d-flex mx-3">
+                            <div class="col-lg-4 col-md-12 col-sm-12 text-secondary  mb-2 d-flex align-items-center">
+                                <a href="NouveauCLient.html" class="text-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill me-2" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                                    </svg>
+                                </a>
+                                <span>Nouveau Client</span>
+                            </div>
+                            <div class="col-lg-8 col-md-12 col-sm-12 mb-2">
+                                <div class="input-group rounded">
+                                    <input type="search" class="form-control rounded-4 shadow-sm" placeholder="Rechercher" aria-label="Search" aria-describedby="search-addon" />
+                                    <span class="input-group-text border-0" id="search-addon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <table class="table table-striped table-hover" style="position: absolute;">
+                            <thead>
+                                <tr>
+                                    <th scope="col" style="color: #f97613;">Nom Client</th>
+                                    <th scope="col" style="color: #f97613;">Code client</th>
+                                    <th scope="col" style="color: #f97613;">Téléphone</th>
+                                    <th scope="col" style="color: #f97613;">Mail</th>
+                                    <th scope="col" style="color: #f97613;">Ville</th>
+                                    <th scope="col" style="color: #f97613;">Type</th>
+                                    <th scope="col" style="color: #f97613;">Etat</th>
+                                    <th scope="col">
+                                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-secondary">RAJAONARISON Rojovola </td>
+                                    <td class="text-secondary">411RAJ-ROJ</td>
+                                    <td class="text-secondary">033.12.515.12</td>
+                                    <td class="text-secondary">rojovola@gmail.com</td>
+                                    <td class="text-secondary">Antananarivo</td>
+                                    <td class="text-secondary">Individuel</td>
+                                    <td class="text-success">Ouvert</td>
+                                    <th>
+                                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td class="text-secondary">RAJAONARISON Rojovola </td>
+                                    <td class="text-secondary">411RAJ-ROJ</td>
+                                    <td class="text-secondary">033.12.515.12</td>
+                                    <td class="text-secondary">rojovola@gmail.com</td>
+                                    <td class="text-secondary">Antananarivo</td>
+                                    <td class="text-secondary">Individuel</td>
+                                    <td class="text-success">Ouvert</td>
+                                    <th>
+                                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td class="text-secondary">RAJAONARISON Rojovola </td>
+                                    <td class="text-secondary">411RAJ-ROJ</td>
+                                    <td class="text-secondary">033.12.515.12</td>
+                                    <td class="text-secondary">rojovola@gmail.com</td>
+                                    <td class="text-secondary">Antananarivo</td>
+                                    <td class="text-secondary">Individuel</td>
+                                    <td class="text-danger">Cloturé</td>
+                                    <th>
+                                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td class="text-secondary">RAJAONARISON Rojovola </td>
+                                    <td class="text-secondary">411RAJ-ROJ</td>
+                                    <td class="text-secondary">033.12.515.12</td>
+                                    <td class="text-secondary">rojovola@gmail.com</td>
+                                    <td class="text-secondary">Antananarivo</td>
+                                    <td class="text-secondary">Individuel</td>
+                                    <td class="text-success">Ouvert</td>
+                                    <th>
+                                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td class="text-secondary">RAJAONARISON Rojovola </td>
+                                    <td class="text-secondary">411RAJ-ROJ</td>
+                                    <td class="text-secondary">033.12.515.12</td>
+                                    <td class="text-secondary">rojovola@gmail.com</td>
+                                    <td class="text-secondary">Antananarivo</td>
+                                    <td class="text-secondary">Individuel</td>
+                                    <td class="text-success">Ouvert</td>
+                                    <th>
+                                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td class="text-secondary">RAJAONARISON Rojovola </td>
+                                    <td class="text-secondary">411RAJ-ROJ</td>
+                                    <td class="text-secondary">033.12.515.12</td>
+                                    <td class="text-secondary">rojovola@gmail.com</td>
+                                    <td class="text-secondary">Antananarivo</td>
+                                    <td class="text-secondary">Individuel</td>
+                                    <td class="text-success">Ouvert</td>
+                                    <th>
+                                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td class="text-secondary">RAJAONARISON Rojovola </td>
+                                    <td class="text-secondary">411RAJ-ROJ</td>
+                                    <td class="text-secondary">033.12.515.12</td>
+                                    <td class="text-secondary">rojovola@gmail.com</td>
+                                    <td class="text-secondary">Antananarivo</td>
+                                    <td class="text-secondary">Individuel</td>
+                                    <td class="text-success">Ouvert</td>
+                                    <th>
+                                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td class="text-secondary">RAJAONARISON Rojovola </td>
+                                    <td class="text-secondary">411RAJ-ROJ</td>
+                                    <td class="text-secondary">033.12.515.12</td>
+                                    <td class="text-secondary">rojovola@gmail.com</td>
+                                    <td class="text-secondary">Antananarivo</td>
+                                    <td class="text-secondary">Individuel</td>
+                                    <td class="text-success">Ouvert</td>
+                                    <th>
+                                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td class="text-secondary">RAJAONARISON Rojovola </td>
+                                    <td class="text-secondary">411RAJ-ROJ</td>
+                                    <td class="text-secondary">033.12.515.12</td>
+                                    <td class="text-secondary">rojovola@gmail.com</td>
+                                    <td class="text-secondary">Antananarivo</td>
+                                    <td class="text-secondary">Individuel</td>
+                                    <td class="text-success">Ouvert</td>
+                                    <th>
+                                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td class="text-secondary">RAJAONARISON Rojovola </td>
+                                    <td class="text-secondary">411RAJ-ROJ</td>
+                                    <td class="text-secondary">033.12.515.12</td>
+                                    <td class="text-secondary">rojovola@gmail.com</td>
+                                    <td class="text-secondary">Antananarivo</td>
+                                    <td class="text-secondary">Individuel</td>
+                                    <td class="text-success">Ouvert</td>
+                                    <th>
+                                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td class="text-secondary">RAJAONARISON Rojovola </td>
+                                    <td class="text-secondary">411RAJ-ROJ</td>
+                                    <td class="text-secondary">033.12.515.12</td>
+                                    <td class="text-secondary">rojovola@gmail.com</td>
+                                    <td class="text-secondary">Antananarivo</td>
+                                    <td class="text-secondary">Individuel</td>
+                                    <td class="text-success">Ouvert</td>
+                                    <th>
+                                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <p class="text-light ms-5 bottom-0 mb-5" style="position: absolute;">Siège Orange Ankorondrano</p>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>
